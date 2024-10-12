@@ -6,7 +6,7 @@ const Resume = () => {
       <main className="mt-10 px-12 ">
         <div className="flex max-w-fit mx-auto mt-5 ">
           <iframe
-            src="Timothy_Medewase_Resume_2025.pdf"
+            src="TimothyMedewase_Resume2025.pdf"
             width="1500 px"
             height="1100 px"
           />

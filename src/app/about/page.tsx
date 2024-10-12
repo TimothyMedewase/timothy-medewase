@@ -23,13 +23,28 @@ const About = () => {
           <div className=" flex flex-col md:flex-row gap-4">
             <Cards />
             <p className=" mt-5 text-left ">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in
-              reprehenderit in voluptate velit esse cillum dolore eu fugiat
-              nulla pariatur. Excepteur sint occaecat cupidatat non proident,
-              sunt in culpa qui officia deserunt mollit anim id est laborum.
+              I am software engineer with a background in Computer science and
+              Mathematics. I am currently pursuing a Bachelors degree in
+              computer science with a mathematics minor at the University of
+              Montevallo, Alabama. I am also very interested in Machine learning
+              and Artificial intelligence.
+              <br />
+              <br />
+              Over the past years, I have been very much involved in Mathematics
+              and Sciences and mostly been interested in the intersection
+              between Chemistry and Mathematics. I have competed in several
+              mathematics competion like the AMC 8, 10, 12, South African
+              Mathematics Olympiad, Kangourou sans frontières maths competion
+              and many more, and I have bagged a couple medals in them. Also, I
+              competed in various chemistry competions like the Nigerian
+              Chemistry Olympiad ranking in the top 10 in the country and top 3
+              in my state.
+              <br />
+              <br />
+              My passion for both Mathematics and Chemistry has led to me
+              aspiring for a future where machine learning and artificial
+              intelligence models can be used to solve complex problems
+              particularly, in the field of Chemistry.
             </p>
           </div>
         </main>

@@ -70,14 +70,14 @@ export function DataTable({ data }: DataTableProps) {
 
   return (
     <div>
-      <div className="flex items-center py-4">
+      <div className=" mx-auto flex justify-center items-center py-4">
         <Input
           placeholder="Search Projects..."
           value={(table.getColumn("title")?.getFilterValue() as string) ?? ""}
           onChange={(event) =>
             table.getColumn("title")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm "
+          className="max-w-xl "
         />
       </div>
       <div className="rounded-md border-b">
