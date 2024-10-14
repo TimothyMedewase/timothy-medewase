@@ -1,6 +1,7 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -37,6 +38,7 @@ export default function Home() {
             Currently working on AI/ ML projects and aspiring to tackle complex
             problems in the near future ...
           </div>
+          <Footer />
         </main>
       </motion.div>
     </div>

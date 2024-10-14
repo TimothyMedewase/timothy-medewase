@@ -3,6 +3,7 @@ import React from "react";
 import { motion } from "framer-motion";
 import { DataTable } from "@/components/DataTable";
 import { projectsData } from "./data";
+import Footer from "@/components/Footer";
 
 const Projects = () => {
   return (
@@ -24,6 +25,7 @@ const Projects = () => {
           <div className=" mx-auto py-10">
             <DataTable data={projectsData} />
           </div>
+          <Footer />
         </main>
       </motion.div>
     </div>

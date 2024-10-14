@@ -2,7 +2,7 @@ import React from "react";
 
 const Footer = () => {
   return (
-    <div className=" px-12">
+    <div className="mt-5 md:mx-auto lg:mx-12">
       <div className="mt-20 mb-2 text-xl ">Contact Me.</div>
       <div className="mt-5 mb-3 text-md ">
         <span className="text-lg">Reach out to me: </span>

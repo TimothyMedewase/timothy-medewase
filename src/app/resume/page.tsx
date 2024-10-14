@@ -1,4 +1,5 @@
 import React from "react";
+import Footer from "@/components/Footer";
 
 const Resume = () => {
   return (
@@ -11,6 +12,7 @@ const Resume = () => {
             height="1100 px"
           />
         </div>
+        <Footer />
       </main>
     </div>
   );
