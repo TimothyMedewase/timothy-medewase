@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
     long_description: "Web Application to provide Spotify users insights",
     technologies: ["Next.js", "React", "Javascript"],
     website: "blank",
-    github: "blank",
+    github: "https://github.com/TimothyMedewase/spaz",
   },
   {
     title: "Buy-N-Sell",
@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
       "An e-commerce platform that sells many range of products ",
     technologies: ["Next.js", "React", "Prisma", "MySQL"],
     website: "blank",
-    github: "blank",
+    github: "https://github.com/TimothyMedewase/Buy-N-Sell",
   },
   {
     title: "Soccer Stats",
@@ -32,14 +32,14 @@ export const projectsData: Project[] = [
       "A web application for comparing the statistics of various soccer players according to their positions.",
     technologies: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     website: "blank",
-    github: "blank",
+    github: "",
   },
   {
     title: "Housing Predictions Project",
     description: "Machine Learning Project",
     long_description: "A predictive system for California housing costs",
     technologies: ["Python", "Scikit-learn"],
-    website: "blank",
+    website: "https://github.com/TimothyMedewase/ML",
     github: "blank",
   },
 ];

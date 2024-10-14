@@ -24,6 +24,33 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      <head>
+        <title>Timothy Medewase - Software Engineer (ML)</title>
+
+        <meta
+          name="google-site-verification"
+          content="1qcDQWJ8xT3SG7Dpr78XCfBmOa3Ydl3yIZCyTsvA0wg"
+        />
+        <meta
+          property="og:title"
+          content="Timothy Medewase - Software Engineer (AI/ML) "
+        />
+        <meta property="og:type" content="website" />
+
+        <meta
+          property="og:url"
+          content="https://timothy-medewase.vercel.app/"
+        />
+
+        <meta
+          property="og:description"
+          content="Software Engineer (ML), CS + Math."
+        />
+        <meta property="og:site_name" content="Timothy Medewase" />
+
+        <meta name="robots" content="index, follow"></meta>
+        <meta name="robots" content="all"></meta>
+      </head>
       <body className={inter.className}>
         <ThemeProvider
           attribute="class"
