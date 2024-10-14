@@ -17,7 +17,7 @@ const About = () => {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <main className="mt-5 px-12">
+        <main className=" mt-5 md:mx-auto lg:mx-12">
           <div className="mt-5 mb-12 font-sans font-bold text-5xl max-w-fit mx-auto">
             Timothy Medewase
           </div>
@@ -26,11 +26,11 @@ const About = () => {
               <Card className="w-full max-w-md lg:w-96 flex-shrink-0 mx-auto lg:mx-0">
                 <CardContent className="p-0">
                   <div className="w-full h-auto">
-                    <div className="aspect-[4/3] lg:aspect-[3/4]">
+                    <div className="aspect-[4/3.5] lg:aspect-[3/4]">
                       <Image
                         src="/timothy_medewase.jpg"
                         alt="Card image"
-                        className="object-cover w-full h-full rounded-t-xl"
+                        className="object-cover w-full h-full rounded-xl"
                         height={600}
                         width={450}
                       />
