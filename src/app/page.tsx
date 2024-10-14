@@ -15,7 +15,7 @@ export default function Home() {
         }}
         className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
-        <main className=" mt-10 px-12">
+        <main className=" mt-5 md:mx-auto lg:mx-12">
           <div className="mt-20 mb-5 text-6xl font-sans font-bold ">
             Timothy Medewase
           </div>
@@ -26,14 +26,14 @@ export default function Home() {
               <span className=" underline underline-offset-4">Solera</span>.
             </Link>
           </div>
-          <div className="mt-2 mb-5 text-md ">
+          <div className="mt-2 mb-5 text-lg">
             I have a strong passion for machine learning and deep learning
             systems. The AlphaFold2 project by DeepMind inspired me, and
             combined with my experience in Chemistry Olympiads, I’ve developed a
             keen interest in computational chemistry, particularly in how AI/ML
             is transforming the field.
           </div>
-          <div className="mt-2 mb-5 text-md ">
+          <div className="mt-2 mb-5 text-lg ">
             Currently working on AI/ ML projects and aspiring to tackle complex
             problems in the near future ...
           </div>
