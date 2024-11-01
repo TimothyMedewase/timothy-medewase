@@ -25,14 +25,18 @@ export default function Home() {
             and mobile applications. Prev Software Development Intern @{" "}
             <Link href="https://www.solera.com/">
               <span className=" underline underline-offset-4">Solera</span>.
-            </Link>
+            </Link>{" "}
+            At Solera, I helped to build a full-stack web application,
+            leveraging tools likes React.js and Microsoft SQL Server to provide
+            insights into the company's data.
           </div>
           <div className="mt-2 mb-5 text-lg">
             I have a strong passion for machine learning and deep learning
-            systems. The AlphaFold2 project by DeepMind inspired me, and
-            combined with my experience in Chemistry Olympiads, I’ve developed a
-            keen interest in computational chemistry, particularly in how AI/ML
-            is transforming the field.
+            systems. The AlphaFold project by DeepMind inspired me, and combined
+            with my experience in Chemistry Olympiads, I’ve developed a keen
+            interest in computational chemistry, particularly in how AI/ML is
+            transforming the field. I'm also very interested in Natural Language
+            Processing (NLP) and Reinforcement Learning.
           </div>
           <div className="mt-2 mb-5 text-lg ">
             Currently working on AI/ ML projects and aspiring to tackle complex

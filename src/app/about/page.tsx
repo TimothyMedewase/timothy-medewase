@@ -41,28 +41,30 @@ const About = () => {
               </Card>
               <div className="flex-1 flex flex-col">
                 <p className="mb-4">
-                  I am software engineer with a background in Computer science
-                  and Mathematics. I am currently pursuing a Bachelors degree in
-                  computer science with a mathematics minor at the University of
-                  Montevallo, Alabama. I am also very interested in Machine
-                  learning and Artificial intelligence.
+                  I am software engineer with a strong foundation in Computer
+                  science and Mathematics, currently pursuing a bachelors degree
+                  in computer science with a minor in mathematics at the
+                  University of Montevallo, Alabama. I am also very interested
+                  in Machine learning and Artificial intelligence.
                 </p>
                 <p className="mb-4">
-                  Over the past years, I have been very much involved in
-                  Mathematics and Sciences and mostly been interested in the
-                  intersection between Chemistry and Mathematics. I have
-                  competed in several mathematics competion like the AMC 8, 10,
-                  12, South African Mathematics Olympiad, Kangourou sans
-                  frontières maths competion and many more, and I have bagged a
-                  couple medals in them. Also, I competed in various chemistry
-                  competions like the Nigerian Chemistry Olympiad ranking in the
-                  top 10 in the country and top 3 in my state.
+                  Over the years, I have been actively involved in mathematics
+                  and sciences, especially drawn to the intersection of
+                  chemistry and mathematics. I have participated in several
+                  mathematics competitions, including the AMC 8, 10, and 12, the
+                  South African Mathematics Olympiad, and the Kangourou sans
+                  frontières, earning multiple medals. In addition, I competed
+                  in various chemistry competitions, such as the Nigerian
+                  Chemistry Olympiad, where I ranked in the top 10 nationally
+                  and in the top 3 in my state.
                 </p>
                 <p>
                   My passion for both Mathematics and Chemistry has led to me
                   aspiring for a future where machine learning and artificial
                   intelligence models can be used to solve complex problems
-                  particularly, in the field of Chemistry.
+                  particularly, in the field of Chemistry. Also, I am very
+                  interested in Natural Language Processing (NLP) and
+                  Reinforcement Learning through deep learning models.
                 </p>
               </div>
             </div>
