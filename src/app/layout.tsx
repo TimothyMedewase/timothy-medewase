@@ -52,16 +52,16 @@ export default function RootLayout({
         <meta name="robots" content="all"></meta>
       </head>
       <body className={inter.className}>
-        <ThemeProvider
+        {/* <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        >
-          <Navbar />
-          {children}
-          <Analytics />
-        </ThemeProvider>
+        > */}
+        <Navbar />
+        {children}
+        <Analytics />
+        {/* </ThemeProvider> */}
         <SpeedInsights />
       </body>
     </html>
