@@ -48,9 +48,9 @@ export const FloatingNav = ({
           </Link>
         ))}
       </div>
-      <div className="mr-4 mt-2 flex justify-end">
+      {/* <div className="mr-4 mt-2 flex justify-end">
         <ModeToggle />
-      </div>
+      </div> */}
     </div>
   );
 };
