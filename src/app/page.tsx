@@ -26,7 +26,7 @@ export default function Home() {
             <Link href="https://www.solera.com/">
               <span className=" underline underline-offset-4">Solera</span>.
             </Link>{" "}
-            At Solera, I helped to build a full-stack web application,
+            At Solera, I helped to build a full-stack dashboard web application,
             leveraging tools likes React.js and Microsoft SQL Server to provide
             insights into the company&apos;s data.
           </div>
