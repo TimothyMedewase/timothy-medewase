@@ -32,14 +32,15 @@ export const projectsData: Project[] = [
       "A web application for comparing the statistics of various soccer players according to their positions.",
     technologies: ["Next.js", "React", "TypeScript", "TailwindCSS"],
     website: "blank",
-    github: "",
+    github: "https://github.com/TimothyMedewase/soccer-stats",
   },
   {
     title: "Housing Predictions Project",
     description: "Machine Learning Project",
     long_description: "A predictive system for California housing costs",
     technologies: ["Python", "Scikit-learn"],
-    website: "https://github.com/TimothyMedewase/ML",
-    github: "blank",
+    website: "",
+    github:
+      "https://github.com/TimothyMedewase/Hands-on-ML/tree/main/%20ch2.%20End-to-End%20ML%20project",
   },
 ];
