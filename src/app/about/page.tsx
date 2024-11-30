@@ -20,7 +20,7 @@ const About = () => {
       >
         <main className=" mt-5 md:mx-auto lg:mx-12">
           <div className="mt-5 mb-12 font-sans font-bold text-5xl max-w-fit mx-auto">
-            Timothy Medewase
+            About
           </div>
           <div className="container mx-auto p-4">
             <div className="flex flex-col lg:flex-row gap-12">
