@@ -67,8 +67,8 @@ const About = () => {
                 </p>
               </div>
             </div>
+            <Footer />
           </div>
-          <Footer />
         </main>
       </motion.div>
     </div>
