@@ -16,7 +16,6 @@ const About = () => {
           duration: 0.8,
           ease: "easeInOut",
         }}
-        className="relative flex flex-col gap-4 items-center justify-center px-4"
       >
         <main className=" mt-5 md:mx-auto lg:mx-12">
           <div className="mt-5 mb-12 font-sans font-bold text-5xl max-w-fit mx-auto">
@@ -40,14 +39,14 @@ const About = () => {
                 </CardContent>
               </Card>
               <div className="flex-1 flex flex-col">
-                <p className="mb-4">
+                <p className="mb-4 text-lg">
                   I am software engineer with a strong foundation in Computer
                   science and Mathematics, currently pursuing a bachelors degree
                   in computer science with a minor in mathematics at the
                   University of Montevallo, Alabama. I am also very interested
                   in Machine learning and Artificial intelligence.
                 </p>
-                <p className="mb-4">
+                <p className="mb-4 text-lg">
                   Over the years, I have been actively involved in mathematics
                   and sciences, especially drawn to the intersection of
                   chemistry and mathematics. I have participated in several
@@ -58,7 +57,7 @@ const About = () => {
                   Chemistry Olympiad, where I ranked in the top 10 nationally
                   and in the top 3 in my state.
                 </p>
-                <p>
+                <p className="mb-4 text-lg">
                   My passion for both Mathematics and Chemistry has led to me
                   aspiring for a future where machine learning and artificial
                   intelligence models can be used to solve complex problems
