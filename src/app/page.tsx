@@ -14,6 +14,7 @@ export default function Home() {
           duration: 0.8,
           ease: "easeInOut",
         }}
+        className="relative flex flex-col gap-4 justify-center px-4"
       >
         <main className=" mt-5 md:mx-auto lg:mx-12">
           <div className="mt-20 mb-5 text-6xl font-sans font-bold ">
