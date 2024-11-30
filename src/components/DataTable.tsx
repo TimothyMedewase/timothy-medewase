@@ -42,12 +42,14 @@ export function DataTable({ data }: DataTableProps) {
               </span>
             </div>
             <div className="mt-2 text-end ">
-              <a
-                href={project.website}
-                className="text-blue-500 hover:underline mr-4"
-              >
-                Website
-              </a>
+              {project.website && (
+                <a
+                  href={project.website}
+                  className="text-blue-500 hover:underline mr-4"
+                >
+                  Website
+                </a>
+              )}
               <a
                 href={project.github}
                 className="text-blue-500 hover:underline"
