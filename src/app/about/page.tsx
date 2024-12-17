@@ -24,17 +24,15 @@ const About = () => {
           <div className="container mx-auto p-4">
             <div className="flex flex-col lg:flex-row gap-12">
               <Card className="w-full max-w-md lg:w-96 flex-shrink-0 mx-auto lg:mx-0">
-                <CardContent className="p-0">
-                  <div className="w-full h-auto">
-                    <div className="aspect-[4/3.5] lg:aspect-[3/4]">
-                      <Image
-                        src="/timothy_medewase.jpg"
-                        alt="Card image"
-                        className="object-cover w-full h-full rounded-xl"
-                        height={600}
-                        width={450}
-                      />
-                    </div>
+                <CardContent className="p-0 h-full">
+                  <div className="h-full">
+                    <Image
+                      src="/timothy_medewase.jpg"
+                      alt="Card image"
+                      className="object-cover w-full h-full rounded-xl"
+                      width={300}
+                      height={300}
+                    />
                   </div>
                 </CardContent>
               </Card>

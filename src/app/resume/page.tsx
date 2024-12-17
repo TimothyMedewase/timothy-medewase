@@ -20,8 +20,9 @@ export default function Resume() {
             Resume
           </div>
           <div className="flex mx-auto max-w-fit">
-            <iframe
-              src="/TimothyMedewase_2025Resume.pdf"
+            <object
+              data="/TimothyMedewaseResume_2025.pdf"
+              type="application/pdf"
               className="h-screen w-screen"
             />
           </div>

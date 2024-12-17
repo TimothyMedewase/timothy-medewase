@@ -11,7 +11,8 @@ export const projectsData: Project[] = [
   {
     title: "SPAZ",
     description: "Music Analytics",
-    long_description: "Web Application to provide Spotify users insights",
+    long_description:
+      "A web application to provide Spotify users insights to their listening patterns",
     technologies: ["Next.js", "React", "Javascript"],
     website: "blank",
     github: "https://github.com/TimothyMedewase/spaz",
@@ -21,7 +22,7 @@ export const projectsData: Project[] = [
     description: "E-commerce ",
     long_description:
       "An e-commerce platform that sells many range of products ",
-    technologies: ["Next.js", "React", "Prisma", "MySQL"],
+    technologies: ["Next.js", "React", "Prisma", "PostgreSQL"],
     website: "blank",
     github: "https://github.com/TimothyMedewase/Buy-N-Sell",
   },
