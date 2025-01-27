@@ -24,7 +24,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html suppressHydrationWarning lang="en">
       <head>
         <title>Timothy Medewase | Software Engineer & ML Engineer</title>
 
@@ -120,16 +120,16 @@ export default function RootLayout({
         </script>
       </head>
       <body className={inter.className}>
-        {/* <ThemeProvider
+        <ThemeProvider
           attribute="class"
           defaultTheme="system"
           enableSystem
           disableTransitionOnChange
-        > */}
-        <Navbar />
-        {children}
-        <Analytics />
-        {/* </ThemeProvider> */}
+        >
+          <Navbar />
+          {children}
+          <Analytics />
+        </ThemeProvider>
         <SpeedInsights />
       </body>
     </html>

@@ -39,18 +39,18 @@ export const FloatingNav = ({
             )}
           >
             <div className="has-tooltip">
-              <span className="tooltip rounded shadow-lg p-1 bg-gray-100 dark:bg-gray-800 text-sm text-gray-800 dark:text-gray-200 -mt-8">
+              {/* <span className="tooltip rounded shadow-lg p-1 bg-gray-100 dark:bg-gray-800 text-sm text-gray-800 dark:text-gray-200 -mt-8">
                 {navItem.name}
-              </span>
+              </span> */}
               <span className="block sm:hidden">{navItem.icon}</span>
             </div>
             <span className="hidden sm:block text-md">{navItem.name}</span>
           </Link>
         ))}
       </div>
-      {/* <div className="mr-4 mt-2 flex justify-end">
+      <div className="mr-4 mt-2 flex justify-end">
         <ModeToggle />
-      </div> */}
+      </div>
     </div>
   );
 };
