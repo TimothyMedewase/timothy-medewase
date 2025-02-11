@@ -1,6 +1,8 @@
 "use client";
 import Footer from "@/components/Footer";
 import { motion } from "framer-motion";
+import Image from "next/image";
+import { Button } from "@/components/ui/button";
 
 export default function Resume() {
   return (
@@ -19,12 +21,18 @@ export default function Resume() {
           <div className="mt-5 mb-12 font-sans font-bold text-5xl max-w-fit mx-auto">
             Resume
           </div>
-          <div className="flex mx-auto max-w-fit">
-            <object
-              data="/TimothyMedewaseResume_2025.pdf"
-              type="application/pdf"
-              className="h-screen w-screen"
+          <div className="flex mx-auto flex-col max-w-fit">
+            <Image
+              src="/TimothyMedewaseResume.png"
+              width={900}
+              height={1000}
+              alt="Picture of my resume"
             />
+            <div className="flex py-2 justify-end">
+              <a href="/TimothyMedewaseResume_2025.pdf" download>
+                <Button>Download Resume</Button>
+              </a>
+            </div>
           </div>
           <Footer />
         </main>
