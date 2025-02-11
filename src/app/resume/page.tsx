@@ -23,7 +23,7 @@ export default function Resume() {
           </div>
           <div className="flex mx-auto flex-col max-w-fit">
             <Image
-              src="/TimothyMedewaseResume.png"
+              src="/TimothyMedewaseResume_2025.png"
               width={900}
               height={1000}
               alt="Picture of my resume"
