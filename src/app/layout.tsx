@@ -47,17 +47,14 @@ export default function RootLayout({
           content="Timothy Medewase | Software Engineer & ML Engineer"
         />
         <meta property="og:type" content="website" />
-        <meta
-          property="og:url"
-          content="https://timothy-medewase.vercel.app/"
-        />
+        <meta property="og:url" content="https://timothy-medewase.com/" />
         <meta
           property="og:description"
           content="Aspiring Software Engineer specializing in Machine Learning and AI."
         />
         <meta
           property="og:image"
-          content="https://timothy-medewase.vercel.app/social-preview.png"
+          content="https://timothy-medewase.com/social-preview.png"
         />
         <meta property="og:site_name" content="Timothy Medewase" />
 
@@ -72,10 +69,9 @@ export default function RootLayout({
         />
         <meta
           name="twitter:image"
-          content="https://timothy-medewase.vercel.app/social-preview.png"
+          content="https://timothy-medewase.com/social-preview.png"
         />
-        <link rel="canonical" href="https://timothy-medewase.vercel.app" />
-        <link rel="canonical" href="https://medewaset.vercel.app" />
+
         <link rel="canonical" href="https://timothy-medewase.com" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -88,7 +84,7 @@ export default function RootLayout({
             "@type": "Person",
             name: "Timothy Medewase",
             jobTitle: "Software Engineer / Machine Learning Engineer",
-            url: "https://timothy-medewase.vercel.app",
+            url: "https://timothy-medewase.com",
             sameAs: [
               "https://linkedin.com/in/timothy-medewase",
               "https://github.com/timothy-medewase",
@@ -107,13 +103,13 @@ export default function RootLayout({
                 "@type": "ListItem",
                 position: 1,
                 name: "Home",
-                item: "https://timothy-medewase.vercel.app",
+                item: "https://timothy-medewase.com",
               },
               {
                 "@type": "ListItem",
                 position: 2,
                 name: "Portfolio",
-                item: "https://timothy-medewase.vercel.app/portfolio",
+                item: "https://timothy-medewase.vercel.com",
               },
             ],
           })}
