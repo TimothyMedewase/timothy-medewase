@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     long_description:
       "An e-commerce platform that sells many range of products ",
     technologies: ["Next.js", "React", "Prisma", "PostgreSQL"],
-    website: "blank",
+    website: "https://buy-n-sell-store.vercel.app",
     github: "https://github.com/TimothyMedewase/Buy-N-Sell",
   },
   {
