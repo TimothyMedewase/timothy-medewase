@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
     long_description:
       "A web application to provide Spotify users insights to their listening patterns",
     technologies: ["Next.js", "React", "Javascript"],
-    website: "blank",
+    website: "https://spaz.vercel.app/",
     github: "https://github.com/TimothyMedewase/spaz",
   },
   {
