@@ -44,4 +44,13 @@ export const projectsData: Project[] = [
     github:
       "https://github.com/TimothyMedewase/Hands-on-ML/tree/main/%20ch2.%20End-to-End%20ML%20project",
   },
+  {
+    title: "ExplainAI",
+    description: "AI Project",
+    long_description:
+      "An AI RAG-powered web application enabling users to upload files and retrieve contextual explanations",
+    technologies: ["Next.js", "FastAPI", "FAISS", "OpenAI API", "LangChain"],
+    website: "",
+    github: "https://github.com/TimothyMedewase/explain-ai-backend",
+  },
 ];
