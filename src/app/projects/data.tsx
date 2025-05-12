@@ -14,7 +14,7 @@ export const projectsData: Project[] = [
     long_description:
       "A web application to provide Spotify users insights to their listening patterns",
     technologies: ["Next.js", "React", "Javascript"],
-    website: "https://spaz.vercel.app/",
+    website: "https://spaz-music.com/",
     github: "https://github.com/TimothyMedewase/spaz",
   },
   {
@@ -50,7 +50,25 @@ export const projectsData: Project[] = [
     long_description:
       "An AI RAG-powered web application enabling users to upload files and retrieve contextual explanations",
     technologies: ["Next.js", "FastAPI", "FAISS", "OpenAI API", "LangChain"],
-    website: "",
+    website: "https://explainai-snowy.vercel.app",
     github: "https://github.com/TimothyMedewase/explain-ai-backend",
+  },
+  {
+    title: "Transformer Implementation",
+    description: "AI Project",
+    long_description:
+      "An implementation of the attention is all you need paper using PyTorch",
+    technologies: ["Python", "PyTorch"],
+    website: "",
+    github: "https://github.com/TimothyMedewase/transformer",
+  },
+  {
+    title: "ML projects",
+    description: "Machine Learning Projects",
+    long_description:
+      "A collection of various machine learning projects, including regression, classification, and clustering tasks.",
+    technologies: ["Python", "Scikit-learn", "TensorFlow", "Keras"],
+    website: "",
+    github: "https://github.com/TimothyMedewase/Hands-on-ML",
   },
 ];
