@@ -30,17 +30,17 @@ export default function Home() {
             leveraging tools likes React.js and Microsoft SQL Server to provide
             insights into the company&apos;s data.
           </div>
-          <div className="mt-2 mb-5 text-lg">
+          {/* <div className="mt-2 mb-5 text-lg">
             I have a strong passion for machine learning and deep learning
             systems. The AlphaFold project by DeepMind inspired me, and combined
             with my experience in Chemistry Olympiads, I&apos;ve developed a
             keen interest in computational chemistry, particularly in how AI/ML
             is transforming the field. I&apos;m also very interested in Natural
             Language Processing (NLP) and Reinforcement Learning.
-          </div>
+          </div> */}
           <div className="mt-2 mb-5 text-lg ">
-            Currently working on AI/ ML projects and aspiring to tackle complex
-            problems in the near future ...
+            Currently working on SWE and AI/ ML projects and aspiring to tackle
+            complex problems in the near future ...
           </div>
           <Footer />
         </main>

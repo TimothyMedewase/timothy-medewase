@@ -23,13 +23,13 @@ export default function Resume() {
           </div>
           <div className="flex mx-auto flex-col max-w-fit">
             <Image
-              src="/TimothyMedewaseResume.png"
+              src="/timothy_medewase_resume.png"
               width={900}
               height={1000}
               alt="Picture of my resume"
             />
             <div className="flex py-2 justify-end">
-              <a href="/TimothyMedewaseResume_2025.pdf" download>
+              <a href="/medewase_timothy_resume_2025.pdf.pdf" download>
                 <Button>Download Resume</Button>
               </a>
             </div>
