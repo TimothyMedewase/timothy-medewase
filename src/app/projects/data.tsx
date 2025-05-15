@@ -71,4 +71,13 @@ export const projectsData: Project[] = [
     website: "",
     github: "https://github.com/TimothyMedewase/Hands-on-ML",
   },
+  {
+    title: "Operating Systems",
+    description: "Operating Systems Projects",
+    long_description:
+      "Implemented various projects related to operating systems, including data and task parallelism, Semaphores and Round Robin Scheduling.",
+    technologies: ["Python"],
+    website: "",
+    github: "https://github.com/TimothyMedewase/os",
+  },
 ];
