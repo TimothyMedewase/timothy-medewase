@@ -3,7 +3,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
-import Footer from "@/components/Footer";
 
 const About = () => {
   return (
@@ -58,14 +57,12 @@ const About = () => {
                 <p className="mb-4 text-lg">
                   My passion for both Mathematics and Chemistry has led to me
                   aspiring for a future where machine learning and artificial
-                  intelligence models can be used to solve complex problems
-                  particularly, in the field of Chemistry. Also, I am very
-                  interested in Natural Language Processing (NLP) and
-                  Reinforcement Learning through deep learning models.
+                  intelligence models can be used to solve complex problems.
+                  Also, I am very interested in Natural Language Processing
+                  (NLP) and Reinforcement Learning through deep learning models.
                 </p>
               </div>
             </div>
-            <Footer />
           </div>
         </main>
       </motion.div>

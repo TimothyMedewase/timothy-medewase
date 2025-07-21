@@ -25,7 +25,6 @@ const Projects = () => {
           <div className=" mx-auto py-10">
             <DataTable data={projectsData} />
           </div>
-          <Footer />
         </main>
       </motion.div>
     </div>
