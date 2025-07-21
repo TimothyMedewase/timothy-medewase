@@ -1,7 +1,6 @@
 "use client";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
@@ -21,28 +20,34 @@ export default function Home() {
             Timothy Medewase
           </div>
           <div className="mt-5 mb-5 text-lg">
-            I am a full-stack software engineer passionate about building web
-            and mobile applications. Prev Software Development Intern @{" "}
+            I am a full-stack software engineer passionate about building
+            scalable web and mobile applications. Prev Software Development
+            Intern @{" "}
             <Link href="https://www.solera.com/">
               <span className=" underline underline-offset-4">Solera</span>.
             </Link>{" "}
             At Solera, I helped to build a full-stack dashboard web application,
-            leveraging tools likes React.js and Microsoft SQL Server to provide
-            insights into the company&apos;s data.
+            leveraging tools like React.js and Microsoft SQL Server to provide
+            insights into the company&apos;s data. My expertise spans modern web
+            technologies including Next.js, React, TypeScript, and backend
+            development with Node.js and databases like PostgreSQL and Prisma.
+            I&apos;ve built e-commerce platforms, music analytics applications,
+            and real-time data visualization dashboards. I enjoy crafting clean,
+            maintainable code and implementing robust software architectures.
           </div>
           <div className="mt-2 mb-5 text-lg">
-            I have a strong passion for machine learning and deep learning
-            systems. The AlphaFold project by DeepMind inspired me, and combined
-            with my experience in Chemistry Olympiads, I&apos;ve developed a
-            keen interest in computational chemistry, particularly in how AI/ML
-            is transforming the field. I&apos;m also very interested in Natural
-            Language Processing (NLP) and Reinforcement Learning.
+            I also have a strong passion for machine learning and artificial
+            intelligence, particularly transformer architectures and Natural
+            Language Processing. I&apos;ve implemented attention mechanisms from
+            scratch, built CNNs for image classification, and developed
+            RAG-powered applications using FastAPI, LangChain, and OpenAI APIs.
           </div>
           <div className="mt-2 mb-5 text-lg ">
-            Currently working on AI/ ML projects and aspiring to tackle complex
-            problems in the near future ...
+            Currently focused on the intersection of software engineering and
+            AI/ML, building production-ready applications that leverage
+            intelligent systems. Always eager to tackle complex technical
+            challenges and contribute to innovative software solutions.
           </div>
-          <Footer />
         </main>
       </motion.div>
     </div>

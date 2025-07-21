@@ -9,15 +9,6 @@ type Project = {
 
 export const projectsData: Project[] = [
   {
-    title: "SPAZ",
-    description: "Music Analytics",
-    long_description:
-      "A web application to provide Spotify users insights to their listening patterns",
-    technologies: ["Next.js", "React", "Javascript"],
-    website: "https://spaz-music.com/",
-    github: "https://github.com/TimothyMedewase/spaz",
-  },
-  {
     title: "Buy-N-Sell",
     description: "E-commerce ",
     long_description:
@@ -26,14 +17,15 @@ export const projectsData: Project[] = [
     website: "https://buy-n-sell-store.vercel.app",
     github: "https://github.com/TimothyMedewase/Buy-N-Sell",
   },
+
   {
-    title: "Soccer Stats",
-    description: "Soccer Statistics ",
+    title: "SPAZ",
+    description: "Music Analytics",
     long_description:
-      "A web application for comparing the statistics of various soccer players according to their positions.",
-    technologies: ["Next.js", "React", "TypeScript", "TailwindCSS"],
-    website: "blank",
-    github: "https://github.com/TimothyMedewase/soccer-stats",
+      "A web application to provide Spotify users insights to their listening patterns",
+    technologies: ["Next.js", "React", "Javascript"],
+    website: "https://spaz-music.com/",
+    github: "https://github.com/TimothyMedewase/spaz",
   },
   {
     title: "Housing Predictions Project",
@@ -52,6 +44,15 @@ export const projectsData: Project[] = [
     technologies: ["Next.js", "FastAPI", "FAISS", "OpenAI API", "LangChain"],
     website: "https://explainai-snowy.vercel.app",
     github: "https://github.com/TimothyMedewase/explain-ai-backend",
+  },
+  {
+    title: "MNIST CNN",
+    description: "Computer Vision Project",
+    long_description:
+      "A convolutional neural network (CNN) implemented to classify handwritten digits from the MNIST dataset.",
+    technologies: ["Python", "PyTorch"],
+    website: "",
+    github: "https://github.com/TimothyMedewase/mnist-cnn",
   },
   {
     title: "Transformer Implementation",

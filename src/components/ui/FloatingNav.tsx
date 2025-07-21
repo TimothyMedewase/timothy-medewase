@@ -4,7 +4,6 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import { usePathname } from "next/navigation";
 import clsx from "clsx";
-import { ModeToggle } from "./toggle";
 
 export const FloatingNav = ({
   navItems,
@@ -20,7 +19,7 @@ export const FloatingNav = ({
   const pathname = usePathname();
   return (
     <div>
-      <div className=" relative flex items-center justify-between">
+      <div className="relative flex items-center justify-center">
         <div
           className={cn(
             "flex max-w-full relative mx-auto pr-8 pl-8 py-4 items-center justify-center space-x-8 mt-4",
@@ -45,9 +44,6 @@ export const FloatingNav = ({
               <span className="hidden sm:block text-md">{navItem.name}</span>
             </Link>
           ))}
-        </div>
-        <div className="mr-4 mt-4 flex justify-end">
-          <ModeToggle />
         </div>
       </div>
     </div>
