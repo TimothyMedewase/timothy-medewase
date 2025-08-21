@@ -3,7 +3,7 @@ import { IconArrowUpRight } from "@tabler/icons-react";
 
 const Footer = () => {
   return (
-    <div className="mt-5 ml-8 ">
+    <div className="mt-5 md:mx-auto lg:mx-12">
       <div className="mt-20 mb-2 text-xl ">Contact Me.</div>
       <div className="mt-5 mb-3 text-md ">
         <span className="text-lg font-semibold">Reach out to me: </span>
