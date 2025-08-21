@@ -26,7 +26,7 @@ const About = () => {
                 <CardContent className="p-0 h-full">
                   <div className="h-full">
                     <Image
-                      src="/timothymedewasenew.jpeg"
+                      src="/timothy_medewase.jpg"
                       alt="Card image"
                       className="object-cover w-full h-full rounded-xl"
                       width={300}
