@@ -13,7 +13,7 @@ const resumeData = [
     type: "ML/AI Focus",
     lastUpdated: "January 2025",
     imagePath: "/ml_resume.png",
-    pdfPath: "/timothy_medewase_resume_2025.pdf",
+    pdfPath: "/medewase_timothy_resume_2025.pdf",
     color: "blue",
   },
   {
@@ -23,7 +23,7 @@ const resumeData = [
     type: "Software Engineering",
     lastUpdated: "January 2025",
     imagePath: "/resume.png",
-    pdfPath: "/timothy_medewase_resume.pdf",
+    pdfPath: "/timothy_medewase_resume_2025.pdf",
     color: "green",
   },
 ];
