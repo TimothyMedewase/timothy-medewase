@@ -9,6 +9,14 @@ type Project = {
 
 export const projectsData: Project[] = [
   {
+    title: "Scour - AI Sports recruiting appp",
+    description: "AI Sports recruiting application",
+    long_description:
+      "An AI-powered sports recruiting platform that helps athletes find the best colleges and opportunities to showcase their talents.",
+    technologies: ["Swift (SwiftUI)", "Supabase (PostgreSQL, Auth, Storage)", "OpenAI API", "Exa API", "RevenueCat", "Gmail API"],
+    website: "https://www.tryscour.co",
+  },
+  {
     title: "Buy-N-Sell",
     description: "E-commerce ",
     long_description:
