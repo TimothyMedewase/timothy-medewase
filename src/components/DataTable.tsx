@@ -52,14 +52,16 @@ export function DataTable({ data }: DataTableProps) {
                   Website
                 </a>
               )}
-              <a
-                target="_blank"
-                rel="noopener noreferrer"
-                href={project.github}
-                className="text-blue-500 hover:underline"
-              >
-                GitHub
-              </a>
+              {project.github && (
+                <a
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  href={project.github}
+                  className="text-blue-500 hover:underline"
+                >
+                  GitHub
+                </a>
+              )}
             </div>
           </div>
         );
