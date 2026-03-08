@@ -18,6 +18,15 @@ export const projectsData: Project[] = [
     github: "",
   },
   {
+    title: "OpenBolts",
+    description: "OEM Knowledge Layer for Automotive Repair",
+    long_description:
+      "The knowledge layer for automotive repair. Turns fragmented OEM manuals into a single, queryable source of truth with page-level citations. Ask a question, get a verified answer.",
+    technologies: ["LLMs APIs (OpenAI, Exa)", "Next.js + React", "Supabase", "FastAPI"],
+    website: "https://openbolts.vercel.app",
+    github: "",
+  },
+  {
     title: "Buy-N-Sell",
     description: "E-commerce ",
     long_description:
@@ -43,7 +52,7 @@ export const projectsData: Project[] = [
     technologies: ["Python", "Scikit-learn"],
     website: "",
     github:
-      "https://github.com/TimothyMedewase/Hands-on-ML/tree/main/ch2.%20End-to-End%20ML%20project",
+      "https://github.com/TimothyMedewase/Hands-on-ML/tree/main/%20ch2.%20End-to-End%20ML%20project"
   },
   {
     title: "ExplainAI",
