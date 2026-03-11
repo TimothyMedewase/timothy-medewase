@@ -38,7 +38,7 @@ const About = () => {
               <div className="flex-1 flex flex-col">
                 <p className="mb-4 text-lg">
                   I am software engineer with a strong foundation in Computer
-                  science and Mathematics, currently pursuing a bachelors degree
+                  science and Mathematics and recently earned a bachelors degree
                   in computer science with a minor in mathematics at the
                   University of Montevallo, Alabama. I am also very interested
                   in Machine learning and Artificial intelligence.
@@ -56,10 +56,13 @@ const About = () => {
                 </p>
                 <p className="mb-4 text-lg">
                   My passion for both Mathematics and Chemistry has led to me
-                  aspiring for a future where machine learning and artificial
-                  intelligence models can be used to solve complex problems.
+                  aspiring for a future where AI/ML models can be used to solve very complex problems.
                   Also, I am very interested in Natural Language Processing
                   (NLP) and Reinforcement Learning through deep learning models.
+                </p>
+                <p className="mb-4 text-lg">
+                  Outside of academics, I&apos;m a huge soccer fan and Manchester United
+                  is my favorite team!
                 </p>
               </div>
             </div>

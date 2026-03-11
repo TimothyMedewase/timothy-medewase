@@ -9,11 +9,11 @@ type Project = {
 
 export const projectsData: Project[] = [
   {
-    title: "Scour - AI Sports recruiting app",
-    description: "Scour helps athletes to find, plan and apply to college sports programs easily.",
+    title: "Scour",
+    description: "AI Sports recruiting app",
     long_description:
-      "An AI-powered sports recruiting platform that helps athletes find the best colleges and opportunities to showcase their talents.",
-    technologies: ["Swift (SwiftUI)", "Supabase (PostgreSQL, Auth, Storage)", "OpenAI API", "Exa API", "RevenueCat", "Gmail API"],
+      "An AI-powered tinder like sports recruiting platform that helps athletes find the best colleges and opportunities to showcase their talents.",
+    technologies: ["Swift", "Supabase", "OpenAI API", "Exa API", "RevenueCat", "Gmail API"],
     website: "https://www.tryscour.co",
     github: "",
   },
@@ -22,7 +22,7 @@ export const projectsData: Project[] = [
     description: "OEM Knowledge Layer for Automotive Repair",
     long_description:
       "The knowledge layer for automotive repair. Turns fragmented OEM manuals into a single, queryable source of truth with page-level citations. Ask a question, get a verified answer.",
-    technologies: ["LLMs APIs (OpenAI, Exa)", "Next.js + React", "Supabase", "FastAPI"],
+    technologies: ["LLM APIs (OpenAI, Exa)", "Next.js + React", "Supabase", "FastAPI"],
     website: "https://openbolts.vercel.app",
     github: "",
   },
