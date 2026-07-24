@@ -1,31 +1,8 @@
-"use client";
-import React from "react";
-import Footer from "../../components/Footer";
-import { motion } from "framer-motion";
-
-const Research = () => {
+export default function Research() {
   return (
-    <div>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 justify-center px-4"
-      >
-        <main className="mt-5 md:mx-auto lg:mx-12">
-          <div className="mt-5 mb-12 font-sans font-bold text-5xl max-w-fit mx-auto">
-            Research
-          </div>
-          <div className="flex max-w-fit mt-5 text-xl">Coming Soon...</div>
-          <Footer />
-        </main>
-      </motion.div>
-    </div>
+    <main className="layout-md mt-4">
+      <h1 className="text-2xl font-bold text-neutral-900 mt-8 mb-2">Research</h1>
+      <p className="text-neutral-500 text-[1rem] mb-10">Coming soon.</p>
+    </main>
   );
-};
-
-export default Research;
+}

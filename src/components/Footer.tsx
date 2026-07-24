@@ -1,61 +1,46 @@
 import React from "react";
-import { IconArrowUpRight } from "@tabler/icons-react";
+import { ArrowUpRight } from "lucide-react";
 
 const Footer = () => {
   return (
-    <div className="mt-5 ml-8 ">
-      <div className="mt-20 mb-2 text-xl ">Contact Me.</div>
-      <div className="mt-5 mb-3 text-md ">
-        <span className="text-lg font-semibold">Reach out to me: </span>
-        <a
-          className="inline-flex items-center -space-x-1"
-          href="mailto:tmedewas@forum.montevallo.edu"
-        >
-          <span className="underline underline-offset-4">
-            tmedewas@forum.montevallo.edu
-          </span>
-          <IconArrowUpRight stroke={1.25} />
-        </a>
-        {", "}
-        <a
-          className="inline-flex items-center -space-x-1"
-          href="mailto:medewaset@gmail.com"
-        >
-          <span className="underline underline-offset-4">
-            medewaset@gmail.com
-          </span>
-          <IconArrowUpRight stroke={1.25} />
-        </a>
+    <footer className="layout-md mt-20 mb-12">
+      <hr className="mb-8" />
+      <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 text-sm text-neutral-500">
+        <span>© {new Date().getFullYear()} Timothy Medewase</span>
+        <div className="flex flex-wrap gap-x-5 gap-y-2">
+          <a
+            href="mailto:medewaset@gmail.com"
+            className="inline-flex items-center gap-0.5 hover:text-black transition-colors"
+          >
+            email <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+          <a
+            href="https://www.github.com/timothymedewase"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-0.5 hover:text-black transition-colors"
+          >
+            github <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+          <a
+            href="https://www.linkedin.com/in/timothy-medewase"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-0.5 hover:text-black transition-colors"
+          >
+            linkedin <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+          <a
+            href="https://x.com/medewaset"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-flex items-center gap-0.5 hover:text-black transition-colors"
+          >
+            x / twitter <ArrowUpRight className="w-3.5 h-3.5" />
+          </a>
+        </div>
       </div>
-      <div className=" mb-5 text-md">
-        <a
-          className=" inline-flex items-center -space-x-1"
-          href="https://www.github.com/timothymedewase"
-          target="_blank"
-        >
-          <span className="underline underline-offset-4">GitHub</span>
-          <IconArrowUpRight stroke={1.25} />
-        </a>
-        {", "}
-        <a
-          className=" inline-flex items-center -space-x-1"
-          href="https://www.linkedin.com/in/timothy-medewase"
-          target="_blank"
-        >
-          <span className="underline underline-offset-4">Linkedin</span>
-          <IconArrowUpRight stroke={1.25} />
-        </a>
-        {", "}
-        <a
-          className=" inline-flex items-center -space-x-1"
-          href="https://x.com/medewaset"
-          target="_blank"
-        >
-          <span className="underline underline-offset-4">X</span>
-          <IconArrowUpRight stroke={1.25} />
-        </a>
-      </div>
-    </div>
+    </footer>
   );
 };
 

@@ -1,49 +1,36 @@
 "use client";
 import React from "react";
-import { FloatingNav } from "./ui/FloatingNav";
-import {
-  IconHome,
-  IconBook,
-  IconUser,
-  IconBriefcase2,
-  IconFileDescription,
-} from "@tabler/icons-react";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
+
+const navLinks = [
+  { name: "about", href: "/about" },
+  { name: "projects", href: "/projects" },
+  { name: "resume", href: "/resume" },
+];
 
 export function Navbar() {
-  const navItems = [
-    {
-      name: "Home",
-      link: "/",
-      icon: <IconHome className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    {
-      name: "About",
-      link: "/about",
-      icon: <IconUser className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    },
-    // {
-    //   name: "Research",
-    //   link: "/research",
-    //   icon: <IconBook className="h-4 w-4 text-neutral-500 dark:text-white" />,
-    // },
-    {
-      name: "Projects",
-      link: "/projects",
-      icon: (
-        <IconBriefcase2 className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-    {
-      name: "Resume",
-      link: "/resume",
-      icon: (
-        <IconFileDescription className="h-4 w-4 text-neutral-500 dark:text-white" />
-      ),
-    },
-  ];
+  const pathname = usePathname();
+
   return (
-    <div className="relative  w-full">
-      <FloatingNav navItems={navItems} />
-    </div>
+    <header className="layout-md flex justify-between items-start pt-10 pb-2 mb-2">
+      <h1 className=" text-neutral-900 text-3xl" style={{ fontFamily: "var(--font-lora), serif" }}>
+        <Link href="/" className="hover:text-black transition-colors duration-150">
+          Timothy Medewase
+        </Link>
+      </h1>
+      <nav className="flex gap-5 text-neutral-500 text-sm mt-1">
+        {navLinks.map((link) => (
+          <Link
+            key={link.href}
+            href={link.href}
+            className={`hover:text-black transition-colors duration-150 ${pathname === link.href ? "text-neutral-900 font-medium" : ""
+              }`}
+          >
+            {link.name}
+          </Link>
+        ))}
+      </nav>
+    </header>
   );
 }

@@ -1,7 +1,8 @@
-type Project = {
+export type Project = {
+  id: string;
   title: string;
+  type: string;
   description: string;
-  long_description: string;
   technologies: string[];
   website: string;
   github: string;
@@ -9,92 +10,112 @@ type Project = {
 
 export const projectsData: Project[] = [
   {
+    id: "deep-research-agent",
+    title: "Deep Research Agent",
+    type: "AI / Full-Stack",
+    description:
+      "A full-stack AI agent that decomposes queries into subquestions, runs tool-calling loops, and returns cited responses with real-time streaming.",
+    technologies: ["Next.js", "FastAPI", "Python", "OpenAI", "Chroma", "Exa", "LangChain"],
+    website: "https://deep-research-frontend-mu.vercel.app/",
+    github: "https://github.com/TimothyMedewase/deep-research-backend",
+  },
+  {
+    id: "scour",
     title: "Scour",
-    description: "AI Sports recruiting app",
-    long_description:
-      "An AI-powered tinder like sports recruiting platform that helps athletes find the best colleges and opportunities to showcase their talents.",
+    type: "iOS App",
+    description:
+      "An AI-powered Tinder-like sports recruiting platform that helps athletes find the best colleges and opportunities to showcase their talents.",
     technologies: ["Swift", "Supabase", "OpenAI API", "Exa API", "RevenueCat", "Gmail API"],
     website: "https://www.tryscour.co",
     github: "",
   },
   {
+    id: "openbolts",
     title: "OpenBolts",
-    description: "OEM Knowledge Layer for Automotive Repair",
-    long_description:
-      "The knowledge layer for automotive repair. Turns fragmented OEM manuals into a single, queryable source of truth with page-level citations. Ask a question, get a verified answer.",
-    technologies: ["LLM APIs (OpenAI, Exa)", "Next.js + React", "Supabase", "FastAPI"],
+    type: "AI / Web App",
+    description:
+      "The context layer for automotive repair. Turns fragmented OEM manuals into a single, queryable source of truth with page-level citations. Ask a question, get a verified answer.",
+    technologies: ["LLM APIs (OpenAI, Exa)", "Next.js", "React", "Supabase", "FastAPI"],
     website: "https://openbolts.vercel.app",
     github: "",
   },
   {
-    title: "Buy-N-Sell",
-    description: "E-commerce ",
-    long_description:
-      "An e-commerce platform that sells many range of products ",
-    technologies: ["Next.js", "React", "Prisma", "PostgreSQL"],
-    website: "https://buy-n-sell-store.vercel.app",
-    github: "https://github.com/TimothyMedewase/Buy-N-Sell",
-  },
-
-  {
-    title: "SPAZ",
-    description: "Music Analytics",
-    long_description:
-      "A web application to provide Spotify users insights to their listening patterns",
-    technologies: ["Next.js", "React", "Javascript"],
-    website: "https://spaz-music.com/",
-    github: "https://github.com/TimothyMedewase/spaz",
-  },
-  {
-    title: "Housing Predictions Project",
-    description: "Machine Learning Project",
-    long_description: "A predictive system for California housing costs",
-    technologies: ["Python", "Scikit-learn"],
-    website: "",
-    github:
-      "https://github.com/TimothyMedewase/Hands-on-ML/tree/main/%20ch2.%20End-to-End%20ML%20project"
-  },
-  {
+    id: "explainai",
     title: "ExplainAI",
-    description: "AI Project",
-    long_description:
-      "An AI RAG-powered web application enabling users to upload files and retrieve contextual explanations",
+    type: "AI / Web App",
+    description:
+      "A RAG-powered web application enabling users to upload files and retrieve contextual explanations using vector search and large language models.",
     technologies: ["Next.js", "FastAPI", "FAISS", "OpenAI API", "LangChain"],
     website: "https://explainai-snowy.vercel.app",
     github: "https://github.com/TimothyMedewase/explain-ai-backend",
   },
   {
-    title: "MNIST CNN",
-    description: "Computer Vision Project",
-    long_description:
-      "A convolutional neural network (CNN) implemented to classify handwritten digits from the MNIST dataset.",
-    technologies: ["Python", "PyTorch"],
-    website: "",
-    github: "https://github.com/TimothyMedewase/mnist-cnn",
+    id: "buy-n-sell",
+    title: "Buy-N-Sell",
+    type: "E-commerce",
+    description:
+      "A full-stack e-commerce platform with product listings, shopping cart, and checkout flow.",
+    technologies: ["Next.js", "React", "Prisma", "PostgreSQL"],
+    website: "https://buy-n-sell-store.vercel.app",
+    github: "https://github.com/TimothyMedewase/Buy-N-Sell",
   },
   {
+    id: "spaz",
+    title: "SPAZ",
+    type: "Music Analytics",
+    description:
+      "A web application providing Spotify users with deep insights into their listening patterns and music taste.",
+    technologies: ["Next.js", "React", "JavaScript"],
+    website: "https://spaz-music.com/",
+    github: "https://github.com/TimothyMedewase/spaz",
+  },
+  {
+    id: "transformer",
     title: "Transformer Implementation",
-    description: "AI Project",
-    long_description:
-      "An implementation of the attention is all you need paper using PyTorch",
+    type: "ML Research",
+    description:
+      'A ground-up implementation of the "Attention Is All You Need" paper, including multi-head self-attention, positional encoding, and full encoder-decoder architecture.',
     technologies: ["Python", "PyTorch"],
     website: "",
     github: "https://github.com/TimothyMedewase/transformer",
   },
   {
-    title: "ML projects",
-    description: "Machine Learning Projects",
-    long_description:
-      "A collection of various machine learning projects, including regression, classification, and clustering tasks.",
+    id: "mnist-cnn",
+    title: "MNIST CNN",
+    type: "Computer Vision",
+    description:
+      "A convolutional neural network implemented to classify handwritten digits from the MNIST dataset with high accuracy.",
+    technologies: ["Python", "PyTorch"],
+    website: "",
+    github: "https://github.com/TimothyMedewase/mnist-cnn",
+  },
+  {
+    id: "housing",
+    title: "Housing Predictions",
+    type: "ML Project",
+    description:
+      "An end-to-end machine learning project building a predictive system for California housing costs using real-world data pipelines.",
+    technologies: ["Python", "Scikit-learn"],
+    website: "",
+    github:
+      "https://github.com/TimothyMedewase/Hands-on-ML/tree/main/%20ch2.%20End-to-End%20ML%20project",
+  },
+  {
+    id: "ml-projects",
+    title: "ML Projects Collection",
+    type: "ML Research",
+    description:
+      "A collection of machine learning projects covering regression, classification, clustering, and deep learning tasks.",
     technologies: ["Python", "Scikit-learn", "TensorFlow", "Keras"],
     website: "",
     github: "https://github.com/TimothyMedewase/Hands-on-ML",
   },
   {
+    id: "os",
     title: "Operating Systems",
-    description: "Operating Systems Projects",
-    long_description:
-      "Implemented various projects related to operating systems, including data and task parallelism, Semaphores and Round Robin Scheduling.",
+    type: "Systems",
+    description:
+      "Various OS-level projects including data and task parallelism, semaphores, and round-robin scheduling algorithms.",
     technologies: ["Python"],
     website: "",
     github: "https://github.com/TimothyMedewase/os",

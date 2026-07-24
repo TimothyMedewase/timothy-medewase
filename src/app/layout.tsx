@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Lora } from "next/font/google";
 import "./globals.css";
 import { Navbar } from "@/components/Navbar";
 import React from "react";
@@ -8,6 +8,7 @@ import { Analytics } from "@vercel/analytics/react";
 import Footer from "@/components/Footer";
 
 const inter = Inter({ subsets: ["latin"] });
+const lora = Lora({ subsets: ["latin"], variable: "--font-lora" });
 
 export const metadata: Metadata = {
   title: "Timothy Medewase | Software Engineer & ML Engineer",
@@ -54,11 +55,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html suppressHydrationWarning lang="en" className="dark">
+    <html lang="en">
       <head>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://cdn.vercel-insights.com" />
-
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -102,7 +100,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.className} bg-black text-white min-h-screen`}>
+      <body className={`${inter.className} ${lora.variable} bg-white text-neutral-900 min-h-screen`}>
         <Navbar />
         {children}
         <Footer />

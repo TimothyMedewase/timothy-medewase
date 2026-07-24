@@ -1,20 +1,17 @@
 "use client";
-import { motion } from "framer-motion";
-import { Button } from "@/components/ui/button";
-import { Download, Eye, FileText } from "lucide-react";
 import { useState } from "react";
 import Image from "next/image";
+import { ArrowUpRight, Download, X } from "lucide-react";
 
 const resumeData = [
   {
     id: 1,
     title: "Machine Learning Resume",
     description: "Specialized for ML/AI engineering roles",
-    type: "ML/AI Focus",
+    type: "ML / AI Focus",
     lastUpdated: "January 2025",
     imagePath: "/ml_resume.png",
     pdfPath: "/medewase_timothy_resume_2025.pdf",
-    color: "blue",
   },
   {
     id: 2,
@@ -24,117 +21,76 @@ const resumeData = [
     lastUpdated: "January 2025",
     imagePath: "/resume.png",
     pdfPath: "/timothy_medewase_resume_2025.pdf",
-    color: "green",
   },
 ];
 
 export default function Resume() {
   const [viewingResume, setViewingResume] = useState<string | null>(null);
 
-  const openResumeView = (imagePath: string) => {
-    setViewingResume(imagePath);
-  };
-
-  const closeResumeView = () => {
-    setViewingResume(null);
-  };
-
   return (
-    <div>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-        className="relative flex flex-col gap-4 justify-center px-4"
-      >
-        <main className="mt-5 mx-4 max-w-4xl xl:mx-auto">
-          <div className="mt-5 mb-12 font-sans font-bold text-5xl text-center">
-            Resume
+    <main className="layout-md mt-4">
+      <h1 className="text-2xl font-bold text-neutral-900 mt-8 mb-2">Resume</h1>
+      <p className="text-neutral-500 text-[1rem] mb-10">
+        Two versions of my resume — one tailored for ML/AI roles and one for
+        general software engineering positions.
+      </p>
+
+      <div className="space-y-0">
+        {resumeData.map((resume, index) => (
+          <div
+            key={resume.id}
+            className={`py-6 ${index < resumeData.length - 1 ? "border-b border-neutral-200" : ""}`}
+          >
+            <div className="flex items-start justify-between gap-4">
+              <div>
+                <h2 className="text-lg font-semibold text-neutral-900 leading-snug mb-0.5">
+                  {resume.title}
+                </h2>
+                <p className="text-xs font-medium uppercase tracking-wider text-neutral-400 mb-1">
+                  {resume.type}
+                </p>
+                <p className="text-sm text-neutral-500">
+                  {resume.description} · Updated {resume.lastUpdated}
+                </p>
+              </div>
+              <div className="flex gap-3 flex-shrink-0 mt-0.5">
+                <button
+                  onClick={() => setViewingResume(resume.imagePath)}
+                  className="inline-flex items-center gap-0.5 text-sm text-neutral-500 hover:text-black transition-colors"
+                >
+                  view <ArrowUpRight className="w-3.5 h-3.5" />
+                </button>
+                <a
+                  href={resume.pdfPath}
+                  download
+                  className="inline-flex items-center gap-0.5 text-sm text-neutral-500 hover:text-black transition-colors"
+                >
+                  download <Download className="w-3.5 h-3.5" />
+                </a>
+              </div>
+            </div>
           </div>
+        ))}
+      </div>
 
-          {/* Resume List */}
-          <div className="space-y-6 mb-16">
-            {resumeData.map((resume, index) => (
-              <motion.div
-                key={resume.id}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ delay: index * 0.2, duration: 0.6 }}
-                className="bg-gray-900/50 backdrop-blur-sm rounded-xl border border-gray-700 p-6 hover:border-gray-500 transition-all duration-300 hover:shadow-lg"
-              >
-                <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-4">
-                  {/* Resume Title */}
-                  <div className="flex items-center gap-4">
-                    <div
-                      className={`p-3 ${
-                        resume.color === "blue"
-                          ? "bg-blue-500/20"
-                          : "bg-green-500/20"
-                      } rounded-lg`}
-                    >
-                      <FileText
-                        className={`w-6 h-6 ${
-                          resume.color === "blue"
-                            ? "text-blue-400"
-                            : "text-green-400"
-                        }`}
-                      />
-                    </div>
-                    <h3 className="text-xl font-semibold text-white">
-                      {resume.title}
-                    </h3>
-                  </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-3">
-                    <Button
-                      onClick={() => openResumeView(resume.imagePath)}
-                      variant="outline"
-                      className="flex items-center gap-2 border-gray-600 hover:border-gray-400 text-gray-300 hover:text-white transition-all duration-200"
-                    >
-                      <Eye className="w-4 h-4" />
-                      View
-                    </Button>
-                    <a href={resume.pdfPath} download>
-                      <Button
-                        className={`flex items-center gap-2 ${
-                          resume.color === "blue"
-                            ? "bg-blue-600 hover:bg-blue-700"
-                            : "bg-green-600 hover:bg-green-700"
-                        } text-white transition-all duration-200 hover:scale-105`}
-                      >
-                        <Download className="w-4 h-4" />
-                        Download
-                      </Button>
-                    </a>
-                  </div>
-                </div>
-              </motion.div>
-            ))}
-          </div>
-        </main>
-      </motion.div>
-
-      {/* Resume Viewer Modal */}
+      {/* Lightbox viewer */}
       {viewingResume && (
-        <div className="fixed inset-0 bg-black/80 backdrop-blur-sm z-50 flex items-center justify-center p-4">
-          <div className="relative bg-gray-900 rounded-xl border border-gray-700 max-w-4xl max-h-[90vh] overflow-auto">
-            <div className="sticky top-0 bg-gray-900 border-b border-gray-700 p-4 flex justify-between items-center">
-              <h3 className="text-lg font-semibold text-white">
-                Resume Preview
-              </h3>
-              <Button
-                onClick={closeResumeView}
-                variant="outline"
-                size="sm"
-                className="border-gray-600 hover:border-gray-400"
+        <div
+          className="fixed inset-0 bg-black/60 z-50 flex items-center justify-center p-6"
+          onClick={() => setViewingResume(null)}
+        >
+          <div
+            className="relative bg-white rounded-sm max-w-3xl w-full max-h-[90vh] overflow-auto shadow-2xl"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <div className="sticky top-0 bg-white border-b border-neutral-200 px-5 py-3 flex justify-between items-center">
+              <span className="text-sm font-medium text-neutral-700">Resume Preview</span>
+              <button
+                onClick={() => setViewingResume(null)}
+                className="text-neutral-400 hover:text-black transition-colors"
               >
-                Close
-              </Button>
+                <X className="w-4 h-4" />
+              </button>
             </div>
             <div className="p-6">
               <Image
@@ -142,12 +98,12 @@ export default function Resume() {
                 alt="Resume Preview"
                 width={800}
                 height={1000}
-                className="w-full h-auto rounded-lg"
+                className="w-full h-auto"
               />
             </div>
           </div>
         </div>
       )}
-    </div>
+    </main>
   );
 }

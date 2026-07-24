@@ -1,76 +1,60 @@
-"use client";
 import React from "react";
-import { motion } from "framer-motion";
-import { Card, CardContent } from "@/components/ui/card";
 import Image from "next/image";
 
-const About = () => {
+export default function About() {
   return (
-    <div>
-      <motion.div
-        initial={{ opacity: 0.0, y: 40 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.3,
-          duration: 0.8,
-          ease: "easeInOut",
-        }}
-      >
-        <main className=" mt-5 md:mx-auto lg:mx-12">
-          <div className="mt-5 mb-12 font-sans font-bold text-5xl max-w-fit mx-auto">
-            About
-          </div>
-          <div className="container mx-auto p-4">
-            <div className="flex flex-col lg:flex-row gap-12">
-              <Card className="w-full max-w-md lg:w-96 flex-shrink-0 mx-auto lg:mx-0">
-                <CardContent className="p-0 h-full">
-                  <div className="h-full">
-                    <Image
-                      src="/timothymedewasenew.jpeg"
-                      alt="Card image"
-                      className="object-cover w-full h-full rounded-xl"
-                      width={300}
-                      height={300}
-                    />
-                  </div>
-                </CardContent>
-              </Card>
-              <div className="flex-1 flex flex-col">
-                <p className="mb-4 text-lg">
-                  I am software engineer with a strong foundation in Computer
-                  science and Mathematics and recently earned a bachelors degree
-                  in computer science with a minor in mathematics at the
-                  University of Montevallo, Alabama. I am also very interested
-                  in Machine learning and Artificial intelligence.
-                </p>
-                <p className="mb-4 text-lg">
-                  Over the years, I have been actively involved in mathematics
-                  and sciences, especially drawn to the intersection of
-                  chemistry and mathematics. I have participated in several
-                  mathematics competitions, including the AMC 8, 10, and 12, the
-                  South African Mathematics Olympiad, and the Kangourou sans
-                  frontières, earning multiple medals. In addition, I competed
-                  in various chemistry competitions, such as the Nigerian
-                  Chemistry Olympiad, where I ranked in the top 10 nationally
-                  and in the top 3 in my state.
-                </p>
-                <p className="mb-4 text-lg">
-                  My passion for both Mathematics and Chemistry has led to me
-                  aspiring for a future where AI/ML models can be used to solve very complex problems.
-                  Also, I am very interested in Natural Language Processing
-                  (NLP) and Reinforcement Learning through deep learning models.
-                </p>
-                <p className="mb-4 text-lg">
-                  Outside of academics, I&apos;m a huge soccer fan and Manchester United
-                  is my favorite team!
-                </p>
-              </div>
-            </div>
-          </div>
-        </main>
-      </motion.div>
-    </div>
-  );
-};
+    <main className="layout-md mt-4">
+      <h1 className="text-2xl font-bold text-neutral-900 mt-8 mb-10">About</h1>
 
-export default About;
+      <div className="flex flex-col sm:flex-row gap-10 mb-12">
+        {/* Photo */}
+        <div className="flex-shrink-0">
+          <Image
+            src="/timothymedewasenew.jpeg"
+            alt="Timothy Medewase"
+            width={180}
+            height={180}
+            className="rounded-sm object-cover w-44 h-44"
+          />
+        </div>
+
+        {/* Short bio beside photo */}
+        <div className="text-[1.05rem] leading-relaxed text-neutral-700 space-y-4">
+          <p>
+            I am a software engineer with a strong foundation in Computer
+            Science and Mathematics. I recently earned a bachelor&apos;s degree
+            in Computer Science with a minor in Mathematics at the University of
+            Montevallo, Alabama.
+          </p>
+          <p>
+            I am passionate about using software engineering and AI to solve problems and build useful products.
+          </p>
+        </div>
+      </div>
+
+      <hr />
+
+      <div className="mt-10 text-[1.05rem] leading-relaxed text-neutral-700 space-y-5 mb-16">
+        <p>
+          Over the years, I have been actively involved in mathematics and
+          sciences, especially drawn to the intersection of chemistry and
+          mathematics. I have participated in several mathematics competitions,
+          including the AMCs and various math olympiads, earning multiple medals.
+        </p>
+        <p>
+          In addition, I competed in chemistry competitions such as the Nigerian
+          Chemistry Olympiad, where I ranked in the top 10 nationally and in the
+          top 3 in my state.
+        </p>
+        <p>
+          My passion for Mathematics and Chemistry has led me to aspire toward a
+          future where AI/ML models can solve very complex scientific problems.
+        </p>
+        <p>
+          Outside of academics, I&apos;m a huge soccer fan and Manchester United
+          is my favorite team!
+        </p>
+      </div>
+    </main>
+  );
+}
