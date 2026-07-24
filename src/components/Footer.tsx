@@ -31,7 +31,7 @@ const Footer = () => {
             linkedin <ArrowUpRight className="w-3.5 h-3.5" />
           </a>
           <a
-            href="https://x.com/medewaset"
+            href="https://x.com/timothymedewase"
             target="_blank"
             rel="noopener noreferrer"
             className="inline-flex items-center gap-0.5 hover:text-black transition-colors"
