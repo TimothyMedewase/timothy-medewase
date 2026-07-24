@@ -15,7 +15,7 @@ const resumeData = [
   },
   {
     id: 2,
-    title: "General Software Engineering Resume",
+    title: "Software Engineering Resume",
     description: "For full-stack and software development roles",
     type: "Software Engineering",
     lastUpdated: "January 2025",

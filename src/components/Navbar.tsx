@@ -14,7 +14,7 @@ export function Navbar() {
 
   return (
     <header className="layout-md flex justify-between items-start pt-10 pb-2 mb-2">
-      <h1 className=" text-neutral-900 text-3xl" style={{ fontFamily: "var(--font-lora), serif" }}>
+      <h1 className=" font-bold text-neutral-900 text-3xl" style={{ fontFamily: "var(--font-lora), serif" }}>
         <Link href="/" className="hover:text-black transition-colors duration-150">
           Timothy Medewase
         </Link>

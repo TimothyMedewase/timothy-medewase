@@ -44,11 +44,8 @@ export default function Home() {
   return (
     <main className="layout-md mt-4">
       {/* Hero */}
-      <p className="text-neutral-900 text-4xl leading-tight font-light mb-16 mt-8">
-        <span className="text-neutral-400">is a </span>software engineer
-        <span className="text-neutral-400">,</span>
-        <br />
-        AI/ML enthusiast.
+      <p className="text-neutral-900 text-2xl leading-tight font-light mb-16 mt-8">
+        <span className="text-neutral-400">is a </span>software / AI/ML engineer
       </p>
 
       {/* Bio */}
