@@ -75,12 +75,12 @@ export default function Home() {
           analytics dashboard used for internal reporting.
         </p>
         <p>
-          I consistently build personal projects like{" "}
+          I love building personal projects like{" "}
           <a className="link" href="https://deep-research-frontend-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
             Deep Research Agent
           </a>
           {" "}— an AI agent that decomposes queries into subquestions and
-          streams cited answers in real time under constrained budgets —{" "}
+          streams cited answers in real time under constrained budgets,{" "}
           <a className="link" href="https://openbolts.vercel.app" target="_blank" rel="noopener noreferrer">
             OpenBolts
           </a>
@@ -88,7 +88,7 @@ export default function Home() {
           <a className="link" href="https://www.tryscour.co" target="_blank" rel="noopener noreferrer">
             SCOUR
           </a>
-          , an iOS recruiting app that helps athletes discover 15,000+ college
+          , an iOS recruiting app that helps young athletes discover 15,000+ college sports
           programs.
         </p>
       </div>
