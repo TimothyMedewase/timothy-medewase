@@ -44,34 +44,52 @@ export default function Home() {
   return (
     <main className="layout-md mt-4">
       {/* Hero */}
-      <p className="text-neutral-900 text-2xl leading-tight font-light mb-16 mt-8">
+      <p className="text-neutral-900 text-xl leading-tight font-light mb-16 mt-8">
         <span className="text-neutral-400">is a </span>software / AI/ML engineer
       </p>
 
       {/* Bio */}
       <div className="text-[1.05rem] leading-relaxed space-y-5 text-neutral-700 mb-16">
         <p>
-          I am a full-stack software engineer passionate about building scalable
-          web, mobile and AI-powered applications. Previously a Software Development Intern
+          I&apos;m a software engineer focused on building AI-powered products
+          at the intersection of full-stack engineering and machine learning. I
+          earned my B.S. in Computer Science from the{" "}
+          <a className="link" href="https://www.montevallo.edu/" target="_blank" rel="noopener noreferrer">
+            University of Montevallo
+          </a>
+          {" "}on a full-ride scholarship (~$160,000), and I&apos;m currently
+          pursuing an M.S. in Computer Science at the University of Texas at
+          Arlington starting Fall 2026.
+        </p>
+        <p>
+          Most recently, I was a Software Engineer (AI/ML) at{" "}
+          <a className="link" href="https://figbox.co" target="_blank" rel="noopener noreferrer">
+            Figbox Technologies
+          </a>
+          , where I built ML-powered backend services supporting users. Before that, I interned
           at{" "}
           <a className="link" href="https://www.solera.com/" target="_blank" rel="noopener noreferrer">
             Solera
           </a>
-          , where I helped build a full-stack dashboard web application using
-          React.js and Microsoft SQL Server.
+          , where I shipped a full-stack
+          analytics dashboard used for internal reporting.
         </p>
         <p>
-          My expertise spans modern web technologies including Next.js, React,
-          TypeScript, and backend development with Node.js, PostgreSQL, and
-          Prisma. I&apos;ve built e-commerce platforms, music analytics
-          applications, and real-time data visualization dashboards.
-        </p>
-        <p>
-          I also have a strong passion for machine learning and AI — particularly
-          transformer architectures and NLP. I&apos;ve implemented attention
-          mechanisms from scratch, built CNNs for image classification, and
-          developed RAG-powered applications using FastAPI, LangChain, and
-          OpenAI APIs.
+          I consistently build personal projects like{" "}
+          <a className="link" href="https://deep-research-frontend-mu.vercel.app/" target="_blank" rel="noopener noreferrer">
+            Deep Research Agent
+          </a>
+          {" "}— an AI agent that decomposes queries into subquestions and
+          streams cited answers in real time under constrained budgets —{" "}
+          <a className="link" href="https://openbolts.vercel.app" target="_blank" rel="noopener noreferrer">
+            OpenBolts
+          </a>
+          , a hybrid RAG context layer for automotive repair manuals, and{" "}
+          <a className="link" href="https://www.tryscour.co" target="_blank" rel="noopener noreferrer">
+            SCOUR
+          </a>
+          , an iOS recruiting app that helps athletes discover 15,000+ college
+          programs.
         </p>
       </div>
 
