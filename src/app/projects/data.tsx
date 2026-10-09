@@ -26,7 +26,7 @@ export const projectsData: Project[] = [
     description:
       "An AI-powered Tinder-like sports recruiting platform that helps athletes find the best colleges and opportunities to showcase their talents.",
     technologies: ["Swift", "Supabase", "OpenAI API", "Exa API", "RevenueCat", "Gmail API"],
-    website: "https://www.tryscour.co",
+    website: "https://tryscour.vercel.app",
     github: "",
   },
   {
