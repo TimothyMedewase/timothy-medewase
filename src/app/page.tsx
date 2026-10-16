@@ -85,7 +85,7 @@ export default function Home() {
             OpenBolts
           </a>
           , a hybrid RAG context layer for automotive repair manuals, and{" "}
-          <a className="link" href="https://www.tryscour.co" target="_blank" rel="noopener noreferrer">
+          <a className="link" href="https://tryscour.vercel.app" target="_blank" rel="noopener noreferrer">
             SCOUR
           </a>
           , an iOS recruiting app that helps young athletes discover 15,000+ college sports
