@@ -31,6 +31,9 @@
     "tailwindcss": "^3.4.1",
     "typescript": "^5"
   },
+  "engines": {
+    "node": ">=24.x"
+  },
   "overrides": {
     "@types/react": "19.0.12",
     "@types/react-dom": "19.0.4"
